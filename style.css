@@ -1,11 +1,8 @@
-/*all css code selectors follow the same ordering as the html markup*/
 body {
-  width: 100%; /*Prevents content from becoming too wide on desktop*/
+  width: 100%;
   margin: 0;
 }
 
-/************************/
-/*Main Content: main contains all the page content besides the page header*/
  main {
    position: relative;
  }
@@ -63,7 +60,9 @@ body {
    z-index: 2;
    text-align: center;
    left: 50%;
-   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
  }
 
  .welcome-banner {
@@ -82,7 +81,9 @@ body {
    position: absolute;
    top: calc(100vh - 68px);
    left: 50%;
-   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+           transform: translateX(-50%);
    z-index: 3;
    font-size: 14px;
  }
@@ -93,7 +94,8 @@ body {
 .full-screen-image a:active {color: rgba(255,255,255,0.7);}
 
  main .my-expertise-container {
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    padding: 15px;
    width: 100%;
    max-width: 1000px;
@@ -118,17 +120,24 @@ body {
  }
 
  .my-expertise-container .core-skills {
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
    padding: 15px 15px;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
    margin-bottom: 0;
  }
 
  .core-skills .core-skill {
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    width: 100%;
    padding: 10px 0;
    text-align: center;
@@ -149,7 +158,8 @@ body {
  }
 
  .core-skill p {
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    margin: 16px;
    font-family: 'Montserrat',sans-serif;
    font-weight: 300;
@@ -182,7 +192,8 @@ body {
    list-style: none;
    font-size: 12px;
    padding-left: 10px;
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
  }
 
  .other-skills-list i {
@@ -204,7 +215,8 @@ body {
  }
 
  .about-me {
-   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
    width: 100%;
    background-color: #fff9f0;
    padding: 15px 15px 60px;
@@ -221,7 +233,8 @@ body {
    background-repeat: no-repeat;
    background-image: url(images/profile-me.jpg);
    border: 4px solid #b3e2fd;
-   box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.5);
+   -webkit-box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.5);
+           box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.5);
  }
 
  .about-me-title, .about-me p,
@@ -300,7 +313,8 @@ body {
    width: 100%;
    white-space: nowrap;
    overflow: hidden;
-   text-overflow: ellipsis;
+   -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
  }
 
  .nth-p-qualtrics {
@@ -392,7 +406,8 @@ body {
      position: relative;
      top: 5px;
      border-radius: 15px;
-     box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.2);
+     -webkit-box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.2);
+             box-shadow: 5px 8px 20px 0 rgba(46,61,73, 0.2);
    }
 
    .qualtrics {
@@ -446,7 +461,8 @@ body {
 
  @media screen and (min-width: 680px) {
    .my-expertise-container .core-skill {
-     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
      width: 30%;
    }
 
