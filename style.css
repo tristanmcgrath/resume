@@ -39,6 +39,7 @@ body {
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
+    border-bottom: 6px solid #24ccff;
  }
 
  .full-screen-image .overlay {
@@ -288,6 +289,78 @@ body {
    margin-top: 15px;
  }
 
+ .my-work-title {
+   font-size: 24px;
+   text-align: center;
+   margin: 30px 0;
+   font-family: 'Montserrat', sans-serif;
+  color: #2d3c49;
+ }
+
+ .github {
+   font-size: 14px    !important;
+ }
+
+ .my-work-container {
+   width: 100%;
+   max-width: 860px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+ }
+
+ .card {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 5px 5px 15px;
+ }
+
+ .card a, .card .card-image-container,
+ .card .card-image-container img, .card
+ .card-content-container {
+   width: 100%;
+ }
+
+ .card {
+   text-decoration: none;
+   color: #2d3c49;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+ }
+
+ .card .card-image-container {
+   height: 170px;
+ }
+
+ .card-image-container img {
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .project-image {
+   width: 80% !important;
+   border: 1px solid black;
+ }
+
+ .card .card-content-container {
+   padding-top: 10px;
+ }
+
+ .card .card-content-container h1 {
+   padding: 0;
+   margin: 0;
+ }
+
+ .card-content-container p {
+   font-size: .8em;
+   padding: 0;
+   margin: 5px 0;
+   text-align: left;
+   padding-left: 28px;
+   line-height: 16px;
+   text-indent: 20px;
+ }
+
  .about-me article h4 {
    font-size: 14px;
    font-weight: 500;
@@ -421,6 +494,10 @@ body {
 
  @media screen and (min-width: 546px) {
 
+   .card {
+     width: 50%;
+   }
+
    .welcome-container {
      width: 500px;
    }
@@ -542,6 +619,10 @@ body {
  }
 
  @media screen and (min-width: 820px) {
+
+   .card {
+     width: 33.3333%;
+   }
 
    .l-divide {
      width: 95%;
